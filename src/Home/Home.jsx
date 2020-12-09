@@ -1,13 +1,14 @@
 import React from 'react'
 import Form from "../Form/Form";
-import treefrog from "../images/treefrog.jpg";
+import dogs from "../images/Dogs_team.jpg";
+import DogList from "../DogList/DogList";
+
 
 const Home = () => {
     return (
         <div>
-            The home page
-            <h1>I changed this homepage</h1>
-            <img src={treefrog} alt="tree frog" />
+            <DogList/>
+
             <Form />
         </div>
     )

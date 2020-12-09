@@ -1,0 +1,13 @@
+ul{
+    list-style-type: none;
+    display: grid;
+    column-count: 4;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: burlywood;
+}
+
+li{
+    text-align: center;
+    border-style: solid;
+    border-color: darkkhaki;
+}

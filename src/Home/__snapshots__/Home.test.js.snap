@@ -32,7 +32,7 @@ exports[`renders the home component correctly 1`] = `
           <option
             value="foo"
           >
-            Foo
+            Apply
           </option>
           <option
             value="bar"

@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Foo = () => {
+const Apply = (props) => {
+
     return (
         <div>
             The foo page
@@ -8,4 +9,4 @@ const Foo = () => {
     )
 }
 
-export default Foo
+export default Apply

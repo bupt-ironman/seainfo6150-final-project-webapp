@@ -2,10 +2,12 @@ import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
 
 import Home from "./Home/Home.jsx";
-import Foo from "./Foo/Foo.jsx";
+import Apply from "./Apply/Apply.jsx";
 import Bar from "./Bar/Bar.jsx";
 import Baz from "./Baz/Baz.jsx";
 import Error from "./Error/Error.jsx";
+import Header from "./Header/Header";
+import styles from "./App.css";
 
 // here is some external content. look at the /baz route below
 // to see how this content is passed down to the components via props
@@ -20,6 +22,7 @@ function App() {
   return (
     <>
       <header>
+        <Header/>
         <nav>
           <ul>
             {/* these links should show you how to connect up a link to a specific route */}
@@ -27,7 +30,7 @@ function App() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/foo">Foo</Link>
+              <Link to="/apply">Apply for adoption</Link>
             </li>
             <li>
               <Link to="/bar/hats/sombrero">Bar</Link>
@@ -42,7 +45,7 @@ function App() {
             renders the first one that matches the current URL. */}
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/foo" exact component={Foo} />
+        <Route path="/apply" exact component={Apply} />
         {/* passing parameters via a route path */}
         <Route
           path="/bar/:categoryId/:productId"
