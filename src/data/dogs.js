@@ -1,6 +1,3 @@
-import React from 'react';
-import DogItem from "../DogItem/DogItem";
-import styles from "../DogList/DogList.module.css";
 const dogs = [{
     key:1,
     name:"PP",
@@ -25,25 +22,6 @@ const dogs = [{
         age:"2 months",
         img:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607743965187&di=0fde055f8805964253c0965ed7d59f86&imgtype=0&src=http%3A%2F%2Fpic7.58cdn.com.cn%2Fzhuanzh%2Fn_v2a590ec3158be45ec82fb52f67765bd24.jpg%3Fw%3D750%26h%3D0"},
 
-    {
-        key:5,
-        name:"kiomi",
-        age:"2 months",
-        img:"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2473356296,773776170&fm=26&gp=0.jpg"},
-
 ]
 
-
-
-
-const DogList = () => {
-    return (<div className={styles.List}>
-        {
-            dogs.map(dog =>{
-                return (<DogItem dog={dog} key={dog.key}/>) } )
-        }
-    </div>);
-}
-
-
-export default DogList;
+export default dogs;

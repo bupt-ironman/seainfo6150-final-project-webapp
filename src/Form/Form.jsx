@@ -12,19 +12,22 @@ const Form = () => {
     <div>
       {
         submittedForm ? (
-          <div>Your form entry was {submittedForm.get("myText")} and {submittedForm.get("myDropdown")}</div>
+          <div>Thank you for subscribing, {submittedForm.get("myName")}!</div>
         ) : (
           <form onSubmit={onSubmit}>
-            <label htmlFor="myTextId">Input</label>
-            <input type="text" name="myText" id="myTextId"/>
+            <label htmlFor="myNameId">Your name</label>
+            <input type="text" name="myName" id="myTextId"/>
 
             <label htmlFor="myDropdownId">Input</label>
             <select name="myDropdown" id="myDropdownId">
-              <option value="foo">Foo</option>
-              <option value="bar">Bar</option>
-              <option value="baz">Baz</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="trans">Trans</option>
             </select>
-            <input type="submit" value="Send it" />
+
+            <label htmlFor="email">Email</label>
+            <input type="text" name="email" id="myEmail"/>
+            <input type="submit" value="subscribe" />
           </form>
         )
       }

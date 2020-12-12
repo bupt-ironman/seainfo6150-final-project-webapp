@@ -1,0 +1,28 @@
+form{
+    display: grid;
+    align-content: center;
+    margin: 20px;
+    border: solid;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    color: darkorange;
+}
+
+.application{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.formItem{
+    display: flex;
+    padding: 10px;
+}
+
+label{
+    margin: 5px;
+}

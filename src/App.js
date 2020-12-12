@@ -7,6 +7,7 @@ import Bar from "./Bar/Bar.jsx";
 import Baz from "./Baz/Baz.jsx";
 import Error from "./Error/Error.jsx";
 import Header from "./Header/Header";
+import dogs from "./data/dogs";
 import styles from "./App.css";
 
 // here is some external content. look at the /baz route below
@@ -31,12 +32,6 @@ function App() {
             </li>
             <li>
               <Link to="/apply">Apply for adoption</Link>
-            </li>
-            <li>
-              <Link to="/bar/hats/sombrero">Bar</Link>
-            </li>
-            <li>
-              <Link to="/baz">Baz</Link>
             </li>
           </ul>
         </nav>
